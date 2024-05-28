@@ -1,0 +1,111 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "tab",
+        "command": "selectNextSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "-selectNextSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+    },
+    {
+        "key": "shift+tab",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+    },
+    {
+        "key": "ctrl+up",
+        "command": "-selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+    },
+    {
+        "key": "ctrl+f10",
+        "command": "editor.debug.action.runToCursor"
+    },
+    {
+        "key": "alt+m",
+        "command": "editor.action.toggleWordWrap"
+    },
+    {
+        "key": "alt+z",
+        "command": "-editor.action.toggleWordWrap"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "-workbench.action.terminal.copyAndClearSelection",
+        "when": "terminalTextSelectedInFocused || terminalFocus && terminalHasBeenCreated && terminalTextSelected || terminalFocus && terminalProcessSupported && terminalTextSelected || terminalFocus && terminalTextSelected && terminalTextSelectedInFocused || terminalHasBeenCreated && terminalTextSelected && terminalTextSelectedInFocused || terminalProcessSupported && terminalTextSelected && terminalTextSelectedInFocused"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "workbench.action.terminal.copySelection",
+        "when": "terminalTextSelectedInFocused || terminalFocus && terminalHasBeenCreated && terminalTextSelected || terminalFocus && terminalProcessSupported && terminalTextSelected || terminalFocus && terminalTextSelected && terminalTextSelectedInFocused || terminalHasBeenCreated && terminalTextSelected && terminalTextSelectedInFocused || terminalProcessSupported && terminalTextSelected && terminalTextSelectedInFocused"
+    },
+    {
+        "key": "ctrl+shift+c",
+        "command": "-workbench.action.terminal.copySelection",
+        "when": "terminalTextSelectedInFocused || terminalFocus && terminalHasBeenCreated && terminalTextSelected || terminalFocus && terminalProcessSupported && terminalTextSelected || terminalFocus && terminalTextSelected && terminalTextSelectedInFocused || terminalHasBeenCreated && terminalTextSelected && terminalTextSelectedInFocused || terminalProcessSupported && terminalTextSelected && terminalTextSelectedInFocused"
+    },
+    {
+        "key": "ctrl+shift+c",
+        "command": "workbench.action.terminal.kill"
+    },
+    {
+        "key": "ctrl+k l",
+        "command": "workbench.action.focusRightGroup"
+    },
+    {
+        "key": "ctrl+k j",
+        "command": "workbench.action.focusLeftGroup"
+    },
+    {
+        "key": "ctrl+alt+right",
+        "command": "-workbench.action.moveEditorToNextGroup"
+    },
+    {
+        "key": "ctrl+alt+right",
+        "command": "workbench.action.increaseViewSize"
+    },
+    {
+        "key": "ctrl+alt+left",
+        "command": "workbench.action.decreaseViewSize"
+    },
+    {
+        "key": "ctrl+alt+left",
+        "command": "-workbench.action.moveEditorToPreviousGroup"
+    },
+    {
+        "key": "ctrl+k left",
+        "command": "-views.moveViewLeft",
+        "when": "focusedView != ''"
+    },
+    {
+        "key": "ctrl+k right",
+        "command": "-views.moveViewRight",
+        "when": "focusedView != ''"
+    },
+    {
+        "key": "ctrl+k up",
+        "command": "-views.moveViewUp",
+        "when": "focusedView != ''"
+    },
+    {
+        "key": "ctrl+k down",
+        "command": "-views.moveViewDown",
+        "when": "focusedView != ''"
+    },
+    {
+        "key": "ctrl+k m",
+        "command": "-workbench.action.editor.changeLanguageMode",
+        "when": "!notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+k i",
+        "command": "workbench.action.focusAboveGroup"
+    },
+    {
+        "key": "ctrl+k m",
+        "command": "workbench.action.focusBelowGroup"
+    }
+]
